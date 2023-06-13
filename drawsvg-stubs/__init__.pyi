@@ -12,6 +12,17 @@ from .frame_animation import FrameAnimation, frame_animate_jupyter, frame_animat
 from .native_animation import SyncedAnimationConfig, animate_element_sequence, animate_text_sequence
 from .url_encode import bytes_as_data_uri, svg_as_data_uri, svg_as_utf8_data_uri
 
+__all__ = [
+    "Raster",
+    "Drawing",
+    "Context", "DrawingBasicElement", "DrawingElement", "DrawingParentElement",
+    "render_svg_frames", "save_video",
+    "FrameAnimation", "frame_animate_jupyter", "frame_animate_spritesheet", "frame_animate_video",
+    "SyncedAnimationConfig", "animate_element_sequence", "animate_text_sequence",
+    "bytes_as_data_uri", "svg_as_data_uri", "svg_as_utf8_data_uri",
+]
+
+
 '''
 A library for creating SVG files or just drawings that can be displayed in
 Jupyter notebooks
