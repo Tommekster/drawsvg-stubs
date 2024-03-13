@@ -32,6 +32,7 @@ class Drawing:
     height: float
     view_box: tuple[float, float, float, float]
     elements: list[types.DrawingElement]
+    css_list: list[str]
     ordered_elements: dict[int, types.DrawingElement]
     pixel_scale: float
     render_width: float | None
@@ -89,7 +90,7 @@ class Drawing:
     def draw_def(self, obj, **kwargs) -> None: ...
     def append_def(self, element): ...
     def append_title(self, text, **kwargs): ...
-    def append_css(self, css_text) -> None: ...
+    def append_css(self, css_text: str) -> None: ...
 
     def embed_google_font(self, family, text=..., display=..., **kwargs) -> None:
         """Download SVG-embeddable CSS from Google fonts.
